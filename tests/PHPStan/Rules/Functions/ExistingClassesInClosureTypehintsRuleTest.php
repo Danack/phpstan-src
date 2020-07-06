@@ -21,11 +21,11 @@ class ExistingClassesInClosureTypehintsRuleTest extends \PHPStan\Testing\RuleTes
 	{
 		$this->analyse([__DIR__ . '/data/closure-typehints.php'], [
 			[
-				'Return typehint of anonymous function has invalid type TestClosureFunctionTypehints\NonexistentClass.',
+				'Return type of anonymous function has invalid type TestClosureFunctionTypehints\NonexistentClass.',
 				10,
 			],
 			[
-				'Parameter $bar of anonymous function has invalid typehint type TestClosureFunctionTypehints\BarFunctionTypehints.',
+				'Parameter $bar of anonymous function has invalid type TestClosureFunctionTypehints\BarFunctionTypehints.',
 				15,
 			],
 			[
@@ -37,11 +37,11 @@ class ExistingClassesInClosureTypehintsRuleTest extends \PHPStan\Testing\RuleTes
 				30,
 			],
 			[
-				'Parameter $trait of anonymous function has invalid typehint type TestClosureFunctionTypehints\SomeTrait.',
+				'Parameter $trait of anonymous function has invalid type TestClosureFunctionTypehints\SomeTrait.',
 				45,
 			],
 			[
-				'Return typehint of anonymous function has invalid type TestClosureFunctionTypehints\SomeTrait.',
+				'Return type of anonymous function has invalid type TestClosureFunctionTypehints\SomeTrait.',
 				50,
 			],
 		]);
@@ -51,11 +51,11 @@ class ExistingClassesInClosureTypehintsRuleTest extends \PHPStan\Testing\RuleTes
 	{
 		$this->analyse([__DIR__ . '/data/closure-7.1-typehints.php'], [
 			[
-				'Parameter $bar of anonymous function has invalid typehint type TestClosureFunctionTypehintsPhp71\NonexistentClass.',
+				'Parameter $bar of anonymous function has invalid type TestClosureFunctionTypehintsPhp71\NonexistentClass.',
 				35,
 			],
 			[
-				'Return typehint of anonymous function has invalid type TestClosureFunctionTypehintsPhp71\NonexistentClass.',
+				'Return type of anonymous function has invalid type TestClosureFunctionTypehintsPhp71\NonexistentClass.',
 				35,
 			],
 		]);
@@ -76,7 +76,7 @@ class ExistingClassesInClosureTypehintsRuleTest extends \PHPStan\Testing\RuleTes
 		}
 		$this->analyse([__DIR__ . '/data/void-parameter-typehint.php'], [
 			[
-				'Parameter $param of anonymous function has invalid typehint type void.',
+				'Parameter $param of anonymous function has invalid type void.',
 				5,
 			],
 		]);

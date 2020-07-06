@@ -20,15 +20,15 @@ class MissingClosureNativeReturnTypehintRuleTest extends RuleTestCase
 	{
 		$this->analyse([__DIR__ . '/data/missing-closure-native-return-typehint.php'], [
 			[
-				'Anonymous function should have native return typehint "void".',
+				'Anonymous function should have native return type "void".',
 				10,
 			],
 			[
-				'Anonymous function should have native return typehint "void".',
+				'Anonymous function should have native return type "void".',
 				13,
 			],
 			[
-				'Anonymous function should have native return typehint "Generator".',
+				'Anonymous function should have native return type "Generator".',
 				16,
 			],
 			[
@@ -36,11 +36,11 @@ class MissingClosureNativeReturnTypehintRuleTest extends RuleTestCase
 				25,
 			],
 			[
-				'Anonymous function should have native return typehint "?int".',
+				'Anonymous function should have native return type "?int".',
 				23,
 			],
 			[
-				'Anonymous function should have native return typehint "?int".',
+				'Anonymous function should have native return type "?int".',
 				33,
 			],
 			[
@@ -48,7 +48,7 @@ class MissingClosureNativeReturnTypehintRuleTest extends RuleTestCase
 				40,
 			],
 			[
-				'Anonymous function should have native return typehint "array".',
+				'Anonymous function should have native return type "array".',
 				46,
 			],
 		]);
